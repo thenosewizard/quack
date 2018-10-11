@@ -69,6 +69,7 @@ body {
     font-size: 1.3em;
 }
 
+
 /* for users to contact the company */
 #contact {
     font-size: 1.2em;
@@ -76,6 +77,7 @@ body {
     display: grid;
     margin-top: 0; 
     bottom: 0;
+    
     background: #353232;
     text-align: center;
     width: 100%;
@@ -87,7 +89,8 @@ body {
 }
 .footerButton  >  a{
     text-decoration: none;
-
+    color: #ffffff;
+    
 }
 
 #contactBtn {
@@ -106,17 +109,67 @@ body {
 
 /* Home page */
 
+
+
 #home {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(900px, auto);
-
+    
 }
 
+/* Image after navbar */
 #mainImage {
     background: #07495e;
 }
 
+#homeText {
+    text-align: center;
+    line-height: 500px;
+    font-size: 3em;
+}
+
+#special {
+    grid-column: 1/-1;
+    background: #353232;
+}
+
+#special > h1 {
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 40px;
+}
+
 #afterImage {
+
+    display: grid;
+    padding: 30px;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(450px, auto);
     background: #ffffff;
+}
+
+.homeHead {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.specialContent {
+    background: #e2c484;
+}
+
+#upperHome {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+}
+    
+#lowerHome {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
 }

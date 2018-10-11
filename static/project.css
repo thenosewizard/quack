@@ -108,9 +108,6 @@ body {
 
 
 /* Home page */
-
-
-
 #home {
     display: grid;
     grid-template-columns: 1fr;
@@ -141,9 +138,8 @@ body {
 }
 
 #afterImage {
-
     display: grid;
-    padding: 30px;
+
     grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(450px, auto);
@@ -171,5 +167,13 @@ body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#lower1 {
+    margin-left: 5%;
+}
+
+#lower2 {
+    margin-right: 5%;
 }

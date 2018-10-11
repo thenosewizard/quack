@@ -40,10 +40,9 @@ body {
     top: 0;
     right: 0;
     position: fixed;
-    display: none;
     float: right;
     height: 100%;
-    width: 200px;
+    width: 0px;
     background: #554c4c;
 }
 

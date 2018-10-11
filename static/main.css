@@ -1,0 +1,63 @@
+
+body {
+    background: #2565eee7;
+    color: #ffffff;
+    font-style: "Arial";
+    margin: 0;
+    padding: 0;
+}
+
+/* Start of layout page */
+
+/* Navigation bar */
+#navigation {
+    position: relative;
+    height: 80px;
+    width: 100%;
+
+}
+
+#inner-nav {
+    padding: 1em;
+}
+
+#logo {
+    font-size: 2em;
+    float: left;
+    line-height: 30px;
+}
+
+#icon {
+    font-size: 2em;
+    float: right;
+    margin-right: 10px;
+    line-height: 40px;
+    cursor: pointer;
+    
+}
+
+#navOptions{
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+    float: right;
+    height: 100%;
+    width: 200px;
+    background: #554c4c;
+    opacity: 0.8;
+}
+
+#navOptions > ul {
+    padding: 0;
+}
+
+#navOptions > ul > li  {
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #a1a0a0;
+}

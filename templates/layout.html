@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Using a if/else statement to determine the title of the page-->
+    {%if title%}
+        <title>Invosystems - {{title}}</title>
+    {% else %}
+        <title>Invosystems</title>
+    {%endif%}
+
+    <!--Main css for the website-->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'main.css')}}">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+</head>
+<body>
+
+    <aside>
+        <div id="navOptions">
+            <ul>
+                <li>&times; </li>
+                <li>Home</li>
+                <li>Big data</li>
+                <li>Products</li>
+                <li>Projects</li>
+                <li>Services</li>
+                <li>About us</li>
+            </ul>
+        </div>
+    </aside>
+    
+    <nav id="navigation">
+        <div id="inner-nav">
+            <div id="logo">Invosystems</div>
+            <div id="icon">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Content for other pages go here-->
+    {%block content%}{%endblock%}
+
+    <!--Script to run JQuery in the webpage-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename = 'layout.js')}}""></script>
+
+    <!--Script to run JS in the webpage-->   
+    {%block script%}{%endblock%}
+</body>
+</html>

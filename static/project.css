@@ -1,6 +1,6 @@
 
 body {
-    background: #2565eee7;
+    background: rgb(20, 54, 88);
     color: #ffffff;
     font-family: ariel, sans-serif;
     margin: 0;
@@ -105,6 +105,7 @@ body {
     font-size: 1em;
     margin-right: 30px;
     background-color: darkolivegreen;
+    cursor: pointer;
 }
 
 /* Home page */

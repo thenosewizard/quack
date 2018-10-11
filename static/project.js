@@ -4,3 +4,9 @@ $(document).ready(function () {
         $('#navOptions').toggle();
     })
 })
+
+$(document).ready(function () {
+    $('#cross').on('click',function () {
+        $('#navOptions').toggle();
+    })
+})

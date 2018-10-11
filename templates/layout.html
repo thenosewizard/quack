@@ -13,17 +13,18 @@
     {%endif%}
 
     <!--Main css for the website-->
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'main.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'project.css')}}">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
 
 </head>
 <body>
 
+    <!--Side nav bar-->
     <aside>
         <div id="navOptions">
             <ul>
-                <li>&times; </li>
+                <li id="cross">&times; </li>
                 <li>Home</li>
                 <li>Big data</li>
                 <li>Products</li>
@@ -34,6 +35,7 @@
         </div>
     </aside>
     
+    <!--Navigate-->
     <nav id="navigation">
         <div id="inner-nav">
             <div id="logo">Invosystems</div>
@@ -46,9 +48,19 @@
     <!--Content for other pages go here-->
     {%block content%}{%endblock%}
 
+
+    <div id="contact">
+        <!--Button that leads to the about us page-->
+        <h3>
+            <span>Are you interested yet?</span>  
+            <button id="contactBtn" class="footerButton"><a href="{{ url_for('aboutUs_page') }}" >Contact Us!</a></button> 
+            <button id="scrollTop" class="footerButton">Scroll to top</button>
+        </h3>
+    </div>
+
     <!--Script to run JQuery in the webpage-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="{{url_for('static', filename = 'layout.js')}}""></script>
+    <script src="{{url_for('static', filename = 'project.js')}}""></script>
 
     <!--Script to run JS in the webpage-->   
     {%block script%}{%endblock%}

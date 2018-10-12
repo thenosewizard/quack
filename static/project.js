@@ -8,7 +8,6 @@ $(document).ready(function () {
     })
 })
 
-// Function to toggle the sideNav
 $(document).ready(function () {
     $('#cross').on('click',function () {
        $('#navOptions').animate({
@@ -41,3 +40,8 @@ function loop () {
     }
     setTimeout("loop()", 3000);
 }
+
+// function to animate loading of the page
+$(document).ready(function () {
+    $("#wholeHome").fadeIn(1500);
+})

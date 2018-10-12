@@ -113,6 +113,11 @@ body {
 }
 
 /* Home page */
+
+#wholeHome {
+    display: none;
+}
+
 #home {
     display: grid;
     grid-template-columns: 1fr;
@@ -162,7 +167,7 @@ body {
     border: 1px solid #353232;
 }
 
-/* Paragraphs in the Home page */
+/* Paragraphs in the Home page & Images*/
 .homePara {
     font-size: 1.4em;
     line-height: 1.7em;
@@ -178,10 +183,18 @@ body {
 
 #upper1 {
     margin-left: 5%; 
+    background: url('.\\images\\consult.jpeg')
+}
+
+#upper2 {
+    background: #EDDEA4 url('.\\images\\products.jpeg');
+    background-repeat: no-repeat;
 }
 
 #upper3 {
     margin-right: 5%;
+    background: #EDDEA4 url('.\\images\\learning.jpeg');
+    background-repeat: no-repeat;
 }
 
 #lowerHome {
@@ -191,12 +204,20 @@ body {
     grid-auto-rows: minmax(100px, auto);
 }
 
+.lowerHead {
+    margin-top: 9%;
+}
+
 #lower1 {
     margin-left: 5%;
     margin-bottom: 20px;
+    background: rgb(88, 77, 32) url('.\\images\\internet.jpeg');
+    background-repeat: no-repeat;
 }
 
 #lower2 {
     margin-right: 5%;
     margin-bottom: 20px;
+    background: rgb(190, 174, 106) url('.\\images\\blockchain.jpeg');
+    background-repeat: no-repeat;
 }

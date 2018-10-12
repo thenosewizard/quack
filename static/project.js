@@ -8,6 +8,7 @@ $(document).ready(function () {
     })
 })
 
+// Function to toggle the sideNav
 $(document).ready(function () {
     $('#cross').on('click',function () {
        $('#navOptions').animate({
@@ -24,3 +25,19 @@ $(document).ready( function () {
         },500);
     });
 })
+
+// Function to loop through the text
+document.addEventListener("DOMContentLoaded", loop);
+let i = 0;
+function loop () {
+    let text = ['Welcome to InvoSystems', 'InvoSystems Singapore'];
+    let homePageText = document.getElementById('homeText');
+    homePageText.innerHTML = text[i];
+
+    if ( i < text.length-1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout("loop()", 3000);
+}

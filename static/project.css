@@ -59,6 +59,11 @@ body {
     border-bottom: 1px solid #a1a0a0;
     
 }
+#navOptions > ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;    
+}
 
 #navOptions > ul > li:hover {
     font-weight: bold;      

@@ -25,12 +25,12 @@
         <div id="navOptions">
             <ul>
                 <li id="cross">&times; </li>
-                <li>Home</li>
-                <li>Big data</li>
-                <li>Products</li>
-                <li>Projects</li>
-                <li>Services</li>
-                <li>About us</li>
+                <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                <li><a href="{{ url_for('bigdata_page') }}">Big Data</a></li>
+                <li><a href="{{ url_for('service_page') }}">Services</a></li>
+                <li><a href="{{ url_for('products_page') }}">Products</a></li>
+                <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
+                <li><a href="{{ url_for('aboutUs_page') }}">About Us</a></li>
             </ul>
         </div>
     </aside>
@@ -38,7 +38,7 @@
     <!--Header-->
     <nav id="navigation">
         <div id="inner-nav">
-            <div id="logo">Invosystems</div>
+            <div id="logo">InvoSystems</div>
             <div id="icon">
                 <i class="fa fa-bars"></i>
             </div>

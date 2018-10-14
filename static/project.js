@@ -1,7 +1,6 @@
 // functions to toggle navbar 
 $(document).ready(function () {
     $('#icon').on('click',function () {
-       // $('#navOptions').toggle();
        $('#navOptions').animate({
            width: '+=200px'
        });
@@ -31,12 +30,15 @@ let i = 0;
 function loop () {
     let text = ['Welcome to InvoSystems', 'InvoSystems Singapore'];
     let homePageText = document.getElementById('homeText');
+    homePageText.style.color = '#000';
     homePageText.innerHTML = text[i];
-
+    
     if ( i < text.length-1) {
         i++;
+        homePageText.style.color = '#ffffff';
     } else {
         i = 0;
+        homePageText.style.color = '#000';
     }
     setTimeout("loop()", 3000);
 }

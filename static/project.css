@@ -130,10 +130,12 @@ body {
     background: #07495e;
 }
 
+
 #homeText {
     text-align: center;
     line-height: 500px;
     font-size: 3em;
+    transition: ease-in-out 400ms;
 }
 
 #special {

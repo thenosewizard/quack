@@ -30,17 +30,16 @@ let i = 0;
 function loop () {
     let text = ['Welcome to InvoSystems', 'InvoSystems Singapore'];
     let homePageText = document.getElementById('homeText');
-    homePageText.style.color = '#000';
     homePageText.innerHTML = text[i];
-    
     if ( i < text.length-1) {
         i++;
-        homePageText.style.color = '#ffffff';
+        homePageText.style.opacity = '1';
     } else {
         i = 0;
-        homePageText.style.color = '#000';
+        homePageText.style.opacity = '0';
+
     }
-    setTimeout("loop()", 3000);
+    setTimeout("loop()", 2500);
 }
 
 // function to animate loading of the page

@@ -135,8 +135,11 @@ body {
     text-align: center;
     line-height: 500px;
     font-size: 3em;
-    transition: ease-in-out 400ms;
+    color: #ffffff;
+    transition: ease-in-out 2500ms;
 }
+
+
 
 #special {
     grid-column: 1/-1;
